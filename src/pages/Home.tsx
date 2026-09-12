@@ -15,6 +15,8 @@ export default function Home() {
     { name: 'اختبر معلوماتك', emoji: '🧪', path: '/games/quiz', color: 'from-purple-500 to-pink-500' },
     { name: 'اضرب الخلد', emoji: '🔨', path: '/games/whack-a-mole', color: 'from-yellow-500 to-amber-500' },
     { name: 'تطابق الألوان', emoji: '🎨', path: '/games/color-match', color: 'from-indigo-500 to-violet-500' },
+    { name: 'خمّن الرقم', emoji: '🔢', path: '/games/guess-number', color: 'from-teal-500 to-cyan-500' },
+    { name: 'سيمون يقول', emoji: '🧠', path: '/games/simon-says', color: 'from-rose-500 to-pink-500' },
   ];
 
   return (
@@ -112,7 +114,7 @@ export default function Home() {
           <div className="bg-gradient-to-r from-purple-600/20 to-pink-600/20 backdrop-blur-sm border border-purple-500/30 rounded-3xl p-8 md:p-12">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div>
-                <div className="text-3xl md:text-4xl font-bold text-purple-400">6+</div>
+                <div className="text-3xl md:text-4xl font-bold text-purple-400">8</div>
                 <div className="text-gray-400 text-sm mt-1">ألعاب متاحة</div>
               </div>
               <div>

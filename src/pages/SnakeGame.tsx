@@ -97,6 +97,11 @@ export default function SnakeGame() {
   }, [isRunning, gameOver, moveSnake]);
 
   const handleKeyDown = useCallback((e: KeyboardEvent) => {
+    const arrowKeys = ['ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'];
+    if (arrowKeys.includes(e.key)) {
+      e.preventDefault();
+    }
+    
     switch (e.key) {
       case 'ArrowUp':
         if (directionRef.current !== 'DOWN') {
@@ -122,8 +127,14 @@ export default function SnakeGame() {
           setDirection('RIGHT');
         }
         break;
+      case ' ':
+        e.preventDefault();
+        if (!isRunning && !gameOver) {
+          setIsRunning(true);
+        }
+        break;
     }
-  }, []);
+  }, [isRunning, gameOver]);
 
   useEffect(() => {
     window.addEventListener('keydown', handleKeyDown);

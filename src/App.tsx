@@ -9,6 +9,8 @@ import TicTacToe from './pages/TicTacToe';
 import QuizGame from './pages/QuizGame';
 import WhackAMole from './pages/WhackAMole';
 import ColorMatch from './pages/ColorMatch';
+import GuessNumber from './pages/GuessNumber';
+import SimonSays from './pages/SimonSays';
 
 function App() {
   return (
@@ -25,6 +27,8 @@ function App() {
             <Route path="/games/quiz" element={<QuizGame />} />
             <Route path="/games/whack-a-mole" element={<WhackAMole />} />
             <Route path="/games/color-match" element={<ColorMatch />} />
+            <Route path="/games/guess-number" element={<GuessNumber />} />
+            <Route path="/games/simon-says" element={<SimonSays />} />
           </Routes>
         </main>
         <Footer />
